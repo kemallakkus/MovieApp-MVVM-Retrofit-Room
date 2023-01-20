@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@drawable/alert_dialog_backround"
+        android:id="@+id/lineer"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:text="ORDER OF IMPORTANCE"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/firstSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:text="I cannot wait"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/secondSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:text="Looks nice"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/thirdSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:text="if i have time "
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@id/lineer"
+        app:layout_constraintEnd_toEndOf="@id/bigStar"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toTopOf="@id/lineer"
+        android:background="@drawable/bg_screen"
+        android:src="@drawable/movie_icon">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@id/lineer"
+        app:layout_constraintStart_toStartOf="@id/bigStar"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toTopOf="@id/lineer"
+        android:background="@drawable/bg_screen"
+        android:src="@drawable/movie_icon">
+    </ImageView>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/bigStar"
+        app:layout_constraintTop_toTopOf="@id/lineer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lineer"
+        android:background="@drawable/bg_screen"
+        android:src="@drawable/movie_icon">
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

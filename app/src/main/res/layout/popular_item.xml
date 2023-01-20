@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="342px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bacround"
+        android:elevation="8dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="342px"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="20dp"
+            android:elevation="1dp">
+            <ImageView
+                android:id="@+id/popularItemImage"
+                android:scaleType="centerCrop"
+                android:layout_width="342px"
+                android:layout_height="513px">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/popularItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Title"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/popularGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Title"
+            android:layout_marginStart="5dp">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
